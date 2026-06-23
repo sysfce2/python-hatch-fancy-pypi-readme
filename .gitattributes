@@ -1,0 +1,5 @@
+# Force LF line endings for text files
+* text=auto eol=lf
+
+# Resolve template vars
+.git_archival.txt  export-subst
