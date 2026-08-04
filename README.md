@@ -33,6 +33,7 @@ You’ve come to the right place!
 - [*jsonschema*](https://pypi.org/project/jsonschema/) ([`pyproject.toml`](https://github.com/python-jsonschema/jsonschema/blob/main/pyproject.toml))
 - [Gradio](https://pypi.org/project/gradio/) ([`pyproject.toml`](https://github.com/gradio-app/gradio/blob/main/pyproject.toml))
 - [*httpx*](https://pypi.org/project/httpx/) ([`pyproject.toml`](https://github.com/encode/httpx/blob/master/pyproject.toml))
+- [*httpx2*](https://pypi.org/project/httpx2/) ([`pyproject.toml`](https://github.com/pydantic/httpx2/blob/main/src/httpx2/pyproject.toml))
 - [OpenAI SDK](https://pypi.org/project/openai/) ([`pyproject.toml`](https://github.com/openai/openai-python/blob/main/pyproject.toml))
 - [Pydantic](https://pypi.org/project/pydantic/) ([`pyproject.toml`](https://github.com/pydantic/pydantic/blob/main/pyproject.toml))
 - [*pytermgui*](https://pypi.org/project/pytermgui/) ([`pyproject.toml`](https://github.com/bczsalba/pytermgui/blob/master/pyproject.toml))
