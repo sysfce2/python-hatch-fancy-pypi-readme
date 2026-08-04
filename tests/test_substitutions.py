@@ -53,9 +53,11 @@ class TestSubstituter:
                 r"#(\d+)",
                 r"[#\1](https://github.com/pydantic/pydantic/issues/\1)",
                 "* Foo #4224, #4470 Bar",
-                "* Foo [#4224](https://github.com/pydantic/pydantic/issues/"
-                "4224), [#4470](https://github.com/pydantic/pydantic/issues/"
-                "4470) Bar",
+                (
+                    "* Foo [#4224](https://github.com/pydantic/pydantic/issues/"
+                    "4224), [#4470](https://github.com/pydantic/pydantic/issues/"
+                    "4470) Bar"
+                ),
             ),
             (
                 r"( +)@([\w\-]+)",

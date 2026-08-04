@@ -161,8 +161,10 @@ This is the *interesting* body!""" == FileFragment.from_config(
             )
 
         assert [
-            "file fragment: 'start-after' and 'start-at' are mutually "
-            "exclusive."
+            (
+                "file fragment: 'start-after' and 'start-at' are mutually "
+                "exclusive."
+            )
         ] == ei.value.errors
 
     def test_pattern_no_match(self, txt_path):

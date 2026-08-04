@@ -28,8 +28,10 @@ class TestValidateConfig:
 
         assert (
             [
-                "tool.hatch.metadata.hooks.fancy-pypi-readme."
-                "content-type is missing."
+                (
+                    "tool.hatch.metadata.hooks.fancy-pypi-readme."
+                    "content-type is missing."
+                )
             ]
             == ei.value.errors
             == ei.value.args[0]
@@ -45,8 +47,10 @@ class TestValidateConfig:
             )
 
         assert [
-            "tool.hatch.metadata.hooks.fancy-pypi-readme.content-type: "
-            "'text/html' is not one of ['text/markdown', 'text/x-rst']"
+            (
+                "tool.hatch.metadata.hooks.fancy-pypi-readme.content-type: "
+                "'text/html' is not one of ['text/markdown', 'text/x-rst']"
+            )
         ] == ei.value.errors
 
 
@@ -72,8 +76,10 @@ class TestValidateConfigFragments:
 
         assert (
             [
-                "tool.hatch.metadata.hooks.fancy-pypi-readme.fragments must "
-                "not be empty."
+                (
+                    "tool.hatch.metadata.hooks.fancy-pypi-readme.fragments must "
+                    "not be empty."
+                )
             ]
             == ei.value.errors
             == ei.value.args[0]
@@ -88,8 +94,10 @@ class TestValidateConfigFragments:
 
         assert (
             [
-                "tool.hatch.metadata.hooks.fancy-pypi-readme.fragments"
-                " is missing."
+                (
+                    "tool.hatch.metadata.hooks.fancy-pypi-readme.fragments"
+                    " is missing."
+                )
             ]
             == ei.value.errors
             == ei.value.args[0]
@@ -220,8 +228,10 @@ class TestValidateConfigSubstitutions:
             )
 
         assert {
-            "'foo???' is not a valid regular expression: multiple repeat at "
-            "position 5"
+            (
+                "'foo???' is not a valid regular expression: multiple repeat at "
+                "position 5"
+            )
         } == set(ei.value.errors)
 
     def test_replacement_not_a_string(self):
@@ -248,6 +258,8 @@ class TestValidateConfigSubstitutions:
             load_and_validate_config(cfg)
 
         assert {
-            "tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions must "
-            "be an array."
+            (
+                "tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions must "
+                "be an array."
+            )
         } == set(ei.value.errors)

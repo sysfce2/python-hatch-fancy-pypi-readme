@@ -131,10 +131,12 @@ ignore = [
   "ANN",     # Mypy is better at this.
   "C901",    # Leave complexity to me.
   "COM",     # Leave commas to formatter.
+  "CPY",     # they expect a very specific shape of a copyright notice
   "D",       # We have different ideas about docstrings.
   "E501",    # leave line-length enforcement to formatter.
   "ISC001",  # conflicts with formatter
   "PLR0912", # Leave complexity to me.
+  "PLR0917", # Leave complexity to me.
   "TRY301",  # Raise in try blocks can totally make sense.
 ]
 

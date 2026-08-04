@@ -74,8 +74,10 @@ class FileFragment:
         if start_after and start_at:
             raise ConfigurationError(
                 [
-                    "file fragment: 'start-after' and 'start-at' are "
-                    "mutually exclusive."
+                    (
+                        "file fragment: 'start-after' and 'start-at' are "
+                        "mutually exclusive."
+                    )
                 ]
             )
 
